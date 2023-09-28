@@ -1,0 +1,50 @@
+//
+//  InboxView.swift
+//  MessengerTutorial
+//
+//  Created by Lee Jinhee on 2023/09/28.
+//
+
+import SwiftUI
+
+struct InboxView: View {
+    var body: some View {
+        NavigationStack {
+            ScrollView {
+                Text("")
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        //
+                    } label: {
+                        Image(systemName: "person.circle.fill")
+                    }
+                }
+                
+                ToolbarItem(placement: .navigationBarLeading) {
+                        Text("Chats")
+                            .font(.title)
+                            .fontWeight(.semibold)
+                }
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        //
+                    } label: {
+                        Image(systemName: "square.and.pencil.circle.fill")
+                            .resizable()
+                            .frame(width: 32, height: 32)
+                            .foregroundStyle(.black, .gray)
+                    }
+                }
+            }
+        }
+    }
+}
+
+struct InboxView_Previews: PreviewProvider {
+    static var previews: some View {
+        InboxView()
+    }
+}
