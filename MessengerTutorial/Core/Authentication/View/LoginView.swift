@@ -85,10 +85,11 @@ struct LoginView: View {
                 Divider()
                 
                 NavigationLink {
-                    
+                    RegistrationView()
+                        .navigationBarBackButtonHidden()
                 } label: {
                     HStack {
-                        Text("Dont'have an account?")
+                        Text("Don't have an account?")
                         Text("Sign Up")
                         
                             .fontWeight(.semibold)
@@ -97,7 +98,7 @@ struct LoginView: View {
                 }
                 .padding(.vertical)
                 
-            }.padding(16)
+            }.padding(.horizontal, 16)
         }
     }
 }
