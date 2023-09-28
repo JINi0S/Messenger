@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var email = ""
-    @State private var password = ""
-    
+    @StateObject var viewModel = LoginViewModel()
     var body: some View {
         NavigationStack {
             VStack {
@@ -22,18 +20,19 @@ struct LoginView: View {
                     .padding()
                 
                 VStack {
-                    TextField("Enter your email", text: $email)
+                    TextField("Enter your email", text: $viewModel.email)
                         .font(.subheadline)
                         .padding(12)
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
                         .padding(.horizontal, 8)
-                    TextField("Enter your password", text: $password)
+                    TextField("Enter your password", text: $viewModel.password)
                         .font(.subheadline)
                         .padding(12)
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
                         .padding(.horizontal, 8)
+                        
                 }.frame(maxWidth: .infinity)
                 
                 Button {
@@ -47,7 +46,7 @@ struct LoginView: View {
                 .frame(maxWidth: .infinity, alignment: .trailing)
                 
                 Button {
-                    //Login
+                    Task { try await viewModel.login() }
                 } label: {
                     Text("Login")
                         .font(.subheadline)
@@ -59,8 +58,7 @@ struct LoginView: View {
                         .cornerRadius(10)
                         .padding(.vertical)
                 }
-                
-
+                 
                 HStack {
                     Rectangle()
                         .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5)
