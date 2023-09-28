@@ -17,9 +17,7 @@ class ProfileViewModel: ObservableObject {
             
         }
     }
-    @Published var profileImage: Image? {
-        didSet {}
-    }
+    @Published var profileImage: Image?
     
     func loadImage() async throws  {
         guard let item = selectedItem else { return }
