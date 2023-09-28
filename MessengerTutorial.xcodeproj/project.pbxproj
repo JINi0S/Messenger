@@ -19,6 +19,7 @@
 		60F4D5EE2AC55F02002E01BC /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F4D5ED2AC55F02002E01BC /* NewMessageView.swift */; };
 		60F4D5F12AC56207002E01BC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F4D5F02AC56207002E01BC /* ProfileView.swift */; };
 		60F4D5F52AC56465002E01BC /* SettingOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F4D5F42AC56465002E01BC /* SettingOptionsViewModel.swift */; };
+		60F4D5F92AC56AEC002E01BC /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F4D5F82AC56AEC002E01BC /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		60F4D5ED2AC55F02002E01BC /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 		60F4D5F02AC56207002E01BC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		60F4D5F42AC56465002E01BC /* SettingOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingOptionsViewModel.swift; sourceTree = "<group>"; };
+		60F4D5F82AC56AEC002E01BC /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				60F4D5F42AC56465002E01BC /* SettingOptionsViewModel.swift */,
+				60F4D5F82AC56AEC002E01BC /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				60F4D5CB2AC2EFCE002E01BC /* ContentView.swift in Sources */,
 				60F4D5E62AC54982002E01BC /* InboxView.swift in Sources */,
 				60F4D5F52AC56465002E01BC /* SettingOptionsViewModel.swift in Sources */,
+				60F4D5F92AC56AEC002E01BC /* ProfileViewModel.swift in Sources */,
 				60F4D5E92AC552D2002E01BC /* ActiveNowView.swift in Sources */,
 				60F4D5C92AC2EFCE002E01BC /* MessengerTutorialApp.swift in Sources */,
 				60F4D5E32AC5467A002E01BC /* RegistrationView.swift in Sources */,

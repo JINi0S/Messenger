@@ -9,16 +9,24 @@ import SwiftUI
 import PhotosUI
 
 struct ProfileView: View {
-    @State var selectedImage: PhotosPickerItem?
+    @StateObject var viewModel = ProfileViewModel()
+    
     var body: some View {
         VStack {
             ZStack(alignment: .bottomTrailing) {
-                PhotosPicker(selection: $selectedImage) {
+                PhotosPicker(selection: $viewModel.selectedItem) {
+                    if let profileImage = viewModel.profileImage {
+                        profileImage
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 80, height: 80)
+                            .clipShape(Circle())
+                    } else {
                         Image(systemName: "person.circle.fill")
                             .resizable()
                             .foregroundColor(.gray)
                             .frame(width: 80, height: 80)
-                    
+                    }
                 }
                 ZStack {
                     Circle()
@@ -58,7 +66,8 @@ struct ProfileView: View {
                     } label: {
                         Text("DeleteAccount")
                     }
-                }.foregroundColor(.red)
+                }
+                .foregroundColor(.red)
             }
         }
     }
