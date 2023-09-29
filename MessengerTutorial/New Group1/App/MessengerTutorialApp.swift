@@ -23,9 +23,7 @@ struct MessengerTutorialApp: App {
 
   var body: some Scene {
     WindowGroup {
-      //NavigationView {
-        LoginView()
-      //}
-    }
+        ContentView ()
+     }
   }
 }
