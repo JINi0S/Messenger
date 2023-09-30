@@ -34,6 +34,7 @@
 		60F4D6182AC5C69C002E01BC /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F4D6172AC5C69C002E01BC /* RegistrationViewModel.swift */; };
 		60F4D61B2AC5C6DA002E01BC /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F4D61A2AC5C6DA002E01BC /* AuthService.swift */; };
 		60F4D61F2AC5DA28002E01BC /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F4D61E2AC5DA28002E01BC /* ContentViewModel.swift */; };
+		60F4D6212AC8666B002E01BC /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F4D6202AC8666B002E01BC /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		60F4D6172AC5C69C002E01BC /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		60F4D61A2AC5C6DA002E01BC /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		60F4D61E2AC5DA28002E01BC /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		60F4D6202AC8666B002E01BC /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		60F4D5D72AC2EFF2002E01BC /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				60F4D6202AC8666B002E01BC /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				60F4D5E62AC54982002E01BC /* InboxView.swift in Sources */,
 				60F4D5F52AC56465002E01BC /* SettingOptionsViewModel.swift in Sources */,
 				60F4D6162AC5C66F002E01BC /* LoginViewModel.swift in Sources */,
+				60F4D6212AC8666B002E01BC /* UserService.swift in Sources */,
 				60F4D5F92AC56AEC002E01BC /* ProfileViewModel.swift in Sources */,
 				60F4D5FB2AC56BC0002E01BC /* User.swift in Sources */,
 				60F4D6032AC5AC9A002E01BC /* ChatView.swift in Sources */,
